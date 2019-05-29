@@ -10,18 +10,27 @@ div.container {
 }
 
 header {
-    background: yellow;
+    background: white;
     grid-row-start: 1;
 }
 
 main {
-    background: lime;
+    background: lightgray;
     grid-row-start: 2;
 }
 
 footer {
-    background: violet;
+    background: whitesmoke;
     grid-row: 3;
+}
+
+svg {
+    transition: 500ms ease; 
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
 }
 
 nav.main-nav {
@@ -32,7 +41,8 @@ nav.main-nav {
 
 nav.secondary-nav {
     max-height: 0;
-    transition: max-height 300ms linear;
+    transition: max-height 800ms linear;
+    background-color: whitesmoke;
 }
 
 nav.secondary-nav.expanded {
@@ -53,12 +63,6 @@ nav.secondary-nav.expanded {
     padding-right: .5rem;
 }
 
-.rotate180 {
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
-}
-
-
 .nav-bar-item {
     padding: .5rem;
 }
@@ -66,6 +70,46 @@ nav.secondary-nav.expanded {
 .left-nav,
 .right-nav {
     align-self: center;
+}
+
+.rounded-corners {
+    border-radius: 6px;
+}
+
+input {
+    padding: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-2 {
+    margin: .5rem;
+}
+
+.m-4 {
+    margin: 1rem;
+}
+
+.mr-0 {
+    margin: 0;
+}
+
+.mr-2 {
+    margin: .5rem;
+}
+
+.mr-4 {
+    margin: 1rem;
+}
+
+textarea:focus,
+input:focus {
+    /* outline: none; */
 }
 
 @media (min-width: 1024px) {}

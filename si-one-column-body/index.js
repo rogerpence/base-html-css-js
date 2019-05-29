@@ -14,18 +14,15 @@ const assignOneTimeEventHandler = function (target, eventName, fn, delay = 0) {
 }
 
 const actions = {
-    search: function(e) {
+    searchJorge: function(e) {
         const navbar = document.getElementById('secondary-nav');        
         navbar.classList.toggle('expanded');
-        e.target.classList.toggle('rotate180')
+
+        document.getElementById('up-down-icon').classList.toggle('rotate180')
 
         if (navbar.classList.contains('expanded')) {
             document.getElementById('customer-search-value').focus();
         }            
-
-        assignOneTimeEventHandler(navbar, 'transitionend', (elem) => {
-            //navbar.classList.toggle('padding');
-        }, 10)
     }
 }
 
