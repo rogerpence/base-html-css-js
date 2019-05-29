@@ -25,7 +25,7 @@ footer {
 }
 
 svg {
-    transition: 500ms ease; 
+    transition: 500ms ease;
 }
 
 .rotate180 {
@@ -57,6 +57,7 @@ nav.secondary-nav.expanded {
     padding-right: .5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-top: solid 2px gray;
 }
 
 .icon {

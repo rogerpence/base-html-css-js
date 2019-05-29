@@ -32,10 +32,11 @@ camelize = function camelize(str) {
     });
 }
 
-const actionButtons = Array.from(document.querySelectorAll('.action-button'));
+//const actionButtons = Array.from(document.querySelectorAll('.action-button'));
+const actionButtons = Array.from(document.querySelectorAll('*[data-role="action-button"]'));
 actionButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        const methodName = camelize(button.id);
+        const methodName = camelize(button.getAttribute('data-fn'));
         actions[methodName](e);
     });
 
