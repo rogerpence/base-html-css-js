@@ -1,0 +1,71 @@
+div.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.bx {
+    border: 1px solid red;
+}
+
+header {
+    background: yellow;
+    grid-row-start: 1;
+}
+
+main {
+    background: lime;
+    grid-row-start: 2;
+}
+
+footer {
+    background: violet;
+    grid-row: 3;
+}
+
+nav.main-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.secondary-nav {
+    max-height: 0;
+    transition: max-height 300ms linear;
+}
+
+nav.secondary-nav.expanded {
+    max-height: 200px;
+}
+
+.nav-padding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.icon {
+    padding-right: .5rem;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+}
+
+
+.nav-bar-item {
+    padding: .5rem;
+}
+
+.left-nav,
+.right-nav {
+    align-self: center;
+}
+
+@media (min-width: 1024px) {}

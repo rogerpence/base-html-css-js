@@ -1,0 +1,35 @@
+div.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 4em;
+}
+
+header {
+    background: yellow;
+    grid-row-start: 1;
+}
+
+main {
+    background: lime;
+    grid-row-start: 2;
+}
+
+footer {
+    background: violet;
+    grid-row: 3;
+}
+
+nav.main-nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav,
+.right-nav {
+    align-self: center;
+}
+
+@media (min-width: 1024px) {
+}
