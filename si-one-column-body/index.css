@@ -40,13 +40,15 @@ nav.main-nav {
 }
 
 nav.secondary-nav {
-    max-height: 0;
-    transition: max-height 800ms linear;
+    height: 0;
+    /* max-height: 0; */
+    transition: all 800ms linear;
+    /* transition: max-height 800ms linear; */
     background-color: whitesmoke;
 }
 
 nav.secondary-nav.expanded {
-    max-height: 200px;
+    height: 6.5em;
 }
 
 .nav-padding {
