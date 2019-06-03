@@ -3,6 +3,7 @@ div.container {
     min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+    font-family: sans-serif;
 }
 
 .bx {
@@ -26,6 +27,11 @@ footer {
 
 svg {
     transition: 500ms ease;
+    border: none;
+}
+
+a.icon {
+    text-decoration: none;
 }
 
 .rotate180 {
@@ -42,7 +48,7 @@ nav.main-nav {
 nav.secondary-nav {
     height: 0;
     /* max-height: 0; */
-    transition: all 800ms linear;
+    transition: all 400ms linear;
     /* transition: max-height 800ms linear; */
     background-color: whitesmoke;
 }
@@ -113,6 +119,57 @@ input {
 textarea:focus,
 input:focus {
     /* outline: none; */
+}
+
+section {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid gray;
+    font-size: .8rem;
+}
+
+.table tr th {
+    background-color: darkgray;
+    padding: .5rem .1rem .5rem .1rem;
+    text-align: left;
+}
+
+.table tr td {
+    padding: .2rem .1rem .2rem .1rem;
+    text-align: left;
+    border-right: 1px solid gray;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.table tr td:nth-child(1) {
+    width: 25%;
+}
+
+.table tr td:nth-child(2) {
+    width: 35%
+}
+
+.table tr td:nth-child(3) {
+    width: 35%;
+}
+
+.table tr td:nth-child(4) {
+    width: 5%;
+}
+
+
+/* .table tr td {
+    padding: .5rem .1rem .5rem .1rem;
+} */
+
+.chevron {
+    padding-right: .1rem;
 }
 
 @media (min-width: 1024px) {}
