@@ -92,6 +92,10 @@ input {
     outline: none;
 }
 
+label[for="customer-search-value"] {
+    font-size: .8rem;
+}
+
 .m-0 {
     margin: 0;
 }
